@@ -2,7 +2,21 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f1b2d;
+
+  /* BMC brand palette */
+  --brand-navy-950: #061225;
+  --brand-navy-900: #0a1c33;
+  --brand-navy-800: #0f2a4a;
+  --brand-navy-700: #163a63;
+  --brand-navy-600: #1f4d80;
+  --brand-teal-500: #14b8a6;
+  --brand-teal-400: #2dd4bf;
+  --brand-teal-300: #5eead4;
+  --brand-slate-600: #475569;
+  --brand-slate-500: #64748b;
+  --brand-slate-200: #e2e8f0;
+  --brand-slate-100: #f1f5f9;
 }
 
 @theme inline {
@@ -10,17 +24,27 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand-navy-950: var(--brand-navy-950);
+  --color-brand-navy-900: var(--brand-navy-900);
+  --color-brand-navy-800: var(--brand-navy-800);
+  --color-brand-navy-700: var(--brand-navy-700);
+  --color-brand-navy-600: var(--brand-navy-600);
+  --color-brand-teal-500: var(--brand-teal-500);
+  --color-brand-teal-400: var(--brand-teal-400);
+  --color-brand-teal-300: var(--brand-teal-300);
+  --color-brand-slate-600: var(--brand-slate-600);
+  --color-brand-slate-500: var(--brand-slate-500);
+  --color-brand-slate-200: var(--brand-slate-200);
+  --color-brand-slate-100: var(--brand-slate-100);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.text-balance {
+  text-wrap: balance;
 }
