@@ -2,20 +2,14 @@
 
 import { useState, type FormEvent } from "react";
 import { ArrowRightIcon, CheckCircleIcon } from "@/components/icons";
+import type { Dictionary } from "@/lib/dictionaries";
 
-const serviceOptions = [
-  "Marine Inspection",
-  "Technical Audit",
-  "Condition / Pre-Purchase Survey",
-  "Vetting Support",
-  "Technical Consultancy",
-  "Otro",
-];
+type ContactFormDict = Dictionary["contact"]["form"];
 
 const inputStyles =
   "w-full rounded-md border border-brand-slate-200 bg-white px-4 py-3 text-sm text-brand-navy-900 placeholder:text-brand-slate-500 focus:border-brand-teal-500 focus:outline-none focus:ring-2 focus:ring-brand-teal-500/30";
 
-export default function ContactForm() {
+export default function ContactForm({ dict }: { dict: ContactFormDict }) {
   const [status, setStatus] = useState<"idle" | "submitted">("idle");
 
   // NOTE(BMC): este formulario aún no está conectado a un backend real.
@@ -33,11 +27,10 @@ export default function ContactForm() {
           <CheckCircleIcon className="h-6 w-6" />
         </span>
         <h3 className="text-xl font-semibold text-brand-navy-900">
-          ¡Gracias por contactarnos!
+          {dict.successTitle}
         </h3>
         <p className="max-w-sm text-sm leading-relaxed text-brand-slate-600">
-          Recibimos tu solicitud. Nuestro equipo se va a comunicar con vos a la
-          brevedad para coordinar los próximos pasos.
+          {dict.successDescription}
         </p>
       </div>
     );
@@ -48,39 +41,39 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div className="flex flex-col gap-1.5">
           <label htmlFor="name" className="text-sm font-medium text-brand-navy-900">
-            Nombre completo
+            {dict.nameLabel}
           </label>
-          <input id="name" name="name" type="text" required className={inputStyles} placeholder="Tu nombre" />
+          <input id="name" name="name" type="text" required className={inputStyles} placeholder={dict.namePlaceholder} />
         </div>
         <div className="flex flex-col gap-1.5">
           <label htmlFor="company" className="text-sm font-medium text-brand-navy-900">
-            Empresa
+            {dict.companyLabel}
           </label>
-          <input id="company" name="company" type="text" className={inputStyles} placeholder="Nombre de tu empresa" />
+          <input id="company" name="company" type="text" className={inputStyles} placeholder={dict.companyPlaceholder} />
         </div>
       </div>
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div className="flex flex-col gap-1.5">
           <label htmlFor="email" className="text-sm font-medium text-brand-navy-900">
-            Email
+            {dict.emailLabel}
           </label>
-          <input id="email" name="email" type="email" required className={inputStyles} placeholder="tu@empresa.com" />
+          <input id="email" name="email" type="email" required className={inputStyles} placeholder={dict.emailPlaceholder} />
         </div>
         <div className="flex flex-col gap-1.5">
           <label htmlFor="phone" className="text-sm font-medium text-brand-navy-900">
-            Teléfono
+            {dict.phoneLabel}
           </label>
-          <input id="phone" name="phone" type="tel" className={inputStyles} placeholder="+00 000 000 000" />
+          <input id="phone" name="phone" type="tel" className={inputStyles} placeholder={dict.phonePlaceholder} />
         </div>
       </div>
 
       <div className="flex flex-col gap-1.5">
         <label htmlFor="service" className="text-sm font-medium text-brand-navy-900">
-          Servicio de interés
+          {dict.serviceLabel}
         </label>
-        <select id="service" name="service" className={inputStyles} defaultValue={serviceOptions[0]}>
-          {serviceOptions.map((option) => (
+        <select id="service" name="service" className={inputStyles} defaultValue={dict.serviceOptions[0]}>
+          {dict.serviceOptions.map((option) => (
             <option key={option} value={option}>
               {option}
             </option>
@@ -90,7 +83,7 @@ export default function ContactForm() {
 
       <div className="flex flex-col gap-1.5">
         <label htmlFor="message" className="text-sm font-medium text-brand-navy-900">
-          Mensaje
+          {dict.messageLabel}
         </label>
         <textarea
           id="message"
@@ -98,7 +91,7 @@ export default function ContactForm() {
           required
           rows={5}
           className={inputStyles}
-          placeholder="Contanos qué necesitás: tipo de inspección, ubicación, fechas, etc."
+          placeholder={dict.messagePlaceholder}
         />
       </div>
 
@@ -106,7 +99,7 @@ export default function ContactForm() {
         type="submit"
         className="inline-flex w-fit items-center justify-center gap-2 rounded-md bg-brand-teal-500 px-6 py-3 text-sm font-semibold text-brand-navy-950 transition-colors hover:bg-brand-teal-400"
       >
-        Enviar Solicitud
+        {dict.submitButton}
         <ArrowRightIcon className="h-4 w-4" />
       </button>
     </form>

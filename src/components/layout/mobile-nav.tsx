@@ -4,15 +4,26 @@ import { useState } from "react";
 import Link from "next/link";
 import { MenuIcon, XIcon } from "@/components/icons";
 import type { NavLink } from "@/lib/navigation";
+import { localizedPath } from "@/lib/navigation";
+import type { Locale } from "@/lib/i18n-config";
+import type { Dictionary } from "@/lib/dictionaries";
 
-export default function MobileNav({ links }: { links: NavLink[] }) {
+export default function MobileNav({
+  links,
+  lang,
+  dict,
+}: {
+  links: NavLink[];
+  lang: Locale;
+  dict: Dictionary;
+}) {
   const [open, setOpen] = useState(false);
 
   return (
     <div className="md:hidden">
       <button
         type="button"
-        aria-label={open ? "Cerrar menú" : "Abrir menú"}
+        aria-label={open ? dict.common.closeMenu : dict.common.openMenu}
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
         className="flex h-10 w-10 items-center justify-center rounded-md text-brand-navy-900 hover:bg-brand-slate-100"
@@ -34,11 +45,11 @@ export default function MobileNav({ links }: { links: NavLink[] }) {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href={localizedPath(lang, "/contact")}
               onClick={() => setOpen(false)}
               className="mt-4 inline-flex items-center justify-center rounded-md bg-brand-teal-500 px-5 py-3 text-sm font-semibold text-brand-navy-950"
             >
-              Solicitar Inspección
+              {dict.common.ctaRequestInspection}
             </Link>
           </nav>
         </div>

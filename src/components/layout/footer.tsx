@@ -1,16 +1,13 @@
 import Link from "next/link";
 import Container from "@/components/ui/container";
 import { MailIcon, PhoneIcon, MapPinIcon } from "@/components/icons";
-import { primaryNav } from "@/lib/navigation";
+import { getPrimaryNav, localizedPath } from "@/lib/navigation";
+import type { Locale } from "@/lib/i18n-config";
+import type { Dictionary } from "@/lib/dictionaries";
 
-const services = [
-  { label: "Marine Inspections", href: "/services" },
-  { label: "Technical Audits", href: "/services" },
-  { label: "Condition Surveys", href: "/services" },
-  { label: "Vetting Support", href: "/services" },
-];
+export default function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
+  const primaryNav = getPrimaryNav(lang, dict);
 
-export default function Footer() {
   return (
     <footer className="bg-brand-navy-950 text-brand-slate-200">
       <Container>
@@ -18,21 +15,20 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2.5">
               <span className="flex h-10 w-10 items-center justify-center rounded-md bg-white/10 text-sm font-bold tracking-wide text-brand-teal-400">
-                BMC
+                {dict.common.brandShort}
               </span>
               <span className="text-sm font-bold text-white">
-                Blueseas Marine Consulting
+                {dict.common.brandName}
               </span>
             </div>
             <p className="text-sm leading-relaxed text-brand-slate-200/80">
-              Inspección marina, auditorías técnicas y consultoría para la industria
-              marítima, con cobertura global y respuesta rápida.
+              {dict.footer.description}
             </p>
           </div>
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wide text-white">
-              Navegación
+              {dict.footer.navHeading}
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
               {primaryNav.map((link) => (
@@ -50,16 +46,16 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wide text-white">
-              Servicios
+              {dict.footer.servicesHeading}
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
-              {services.map((service) => (
-                <li key={service.label}>
+              {dict.footer.services.map((service) => (
+                <li key={service}>
                   <Link
-                    href={service.href}
+                    href={localizedPath(lang, "/services")}
                     className="text-sm text-brand-slate-200/80 hover:text-brand-teal-300"
                   >
-                    {service.label}
+                    {service}
                   </Link>
                 </li>
               ))}
@@ -68,29 +64,29 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wide text-white">
-              Contacto
+              {dict.footer.contactHeading}
             </h3>
             {/* TODO(BMC): reemplazar con los datos de contacto reales antes de publicar */}
             <ul className="mt-4 flex flex-col gap-3 text-sm text-brand-slate-200/80">
               <li className="flex items-center gap-2.5">
                 <MailIcon className="h-4 w-4 shrink-0 text-brand-teal-400" />
-                <span>contact@blueseasmc.com</span>
+                <span>{dict.footer.email}</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <PhoneIcon className="h-4 w-4 shrink-0 text-brand-teal-400" />
-                <span>+1 (000) 000-0000</span>
+                <span>{dict.footer.phone}</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <MapPinIcon className="h-4 w-4 shrink-0 text-brand-teal-400" />
-                <span>Oficina central — dirección pendiente</span>
+                <span>{dict.footer.officeShort}</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="flex flex-col gap-2 border-t border-white/10 py-6 text-xs text-brand-slate-200/60 sm:flex-row sm:items-center sm:justify-between">
-          <p>&copy; {new Date().getFullYear()} Blueseas Marine Consulting. Todos los derechos reservados.</p>
-          <p>Worldwide Marine Inspection, Audits and Technical Consultancy.</p>
+          <p>&copy; {new Date().getFullYear()} {dict.common.brandName}. {dict.footer.copyright}</p>
+          <p>{dict.footer.tagline}</p>
         </div>
       </Container>
     </footer>

@@ -1,0 +1,307 @@
+{
+  "metadata": {
+    "titleDefault": "Blueseas Marine Consulting (BMC) | Inspección Marina y Consultoría Técnica",
+    "titleTemplate": "%s | BMC",
+    "description": "Blueseas Marine Consulting (BMC) ofrece inspecciones marinas, auditorías técnicas y consultoría especializada para la industria marítima, con cobertura y respuesta a nivel mundial.",
+    "keywords": [
+      "marine inspection",
+      "marine surveyor",
+      "technical consultancy",
+      "ship audits",
+      "vetting inspections",
+      "Blueseas Marine Consulting"
+    ]
+  },
+  "common": {
+    "brandName": "Blueseas Marine Consulting",
+    "brandShort": "BMC",
+    "brandTagline": "Worldwide Marine Inspection & Technical Consultancy",
+    "nav": {
+      "home": "Inicio",
+      "about": "Nosotros",
+      "services": "Servicios",
+      "industries": "Industrias",
+      "coverage": "Cobertura Global",
+      "contact": "Contacto"
+    },
+    "ctaRequestInspection": "Solicitar Inspección",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "languageSwitcherLabel": "Idioma"
+  },
+  "footer": {
+    "description": "Inspección marina, auditorías técnicas y consultoría para la industria marítima, con cobertura global y respuesta rápida.",
+    "navHeading": "Navegación",
+    "servicesHeading": "Servicios",
+    "contactHeading": "Contacto",
+    "services": ["Marine Inspections", "Technical Audits", "Condition Surveys", "Vetting Support"],
+    "email": "contact@blueseasmc.com",
+    "phone": "+1 (000) 000-0000",
+    "officeShort": "Oficina central — dirección pendiente",
+    "copyright": "Todos los derechos reservados.",
+    "tagline": "Worldwide Marine Inspection, Audits and Technical Consultancy."
+  },
+  "home": {
+    "hero": {
+      "badge": "Blueseas Marine Consulting",
+      "title": "Inspección Marina, Auditorías y Consultoría Técnica a Nivel Mundial",
+      "subtitle": "Acompañamos a armadores, operadores, aseguradoras y clubes P&I con inspecciones confiables, auditorías técnicas rigurosas y respuesta rápida en cualquier puerto del mundo.",
+      "ctaPrimary": "Solicitar Inspección",
+      "ctaSecondary": "Conocer Servicios"
+    },
+    "trustBadges": ["Cobertura Global", "Respuesta Rápida", "Inspectores Calificados", "Excelencia Técnica"],
+    "services": {
+      "eyebrow": "Servicios",
+      "title": "Soluciones técnicas para cada etapa de la operación",
+      "description": "Desde inspecciones puntuales hasta programas de auditoría continuos, adaptamos cada servicio a las necesidades de tu flota u operación.",
+      "viewAll": "Ver todos los servicios",
+      "items": [
+        { "title": "Marine Inspections", "description": "Inspecciones a bordo de buques y equipos, alineadas con estándares internacionales de la industria." },
+        { "title": "Technical Audits", "description": "Auditorías técnicas y de gestión para verificar el cumplimiento operativo y regulatorio." },
+        { "title": "Condition Surveys", "description": "Relevamientos de condición y pre-compra para evaluar el estado real de una embarcación." },
+        { "title": "Consultoría Técnica", "description": "Asesoramiento especializado para operadores, aseguradoras y clubes de protección e indemnización." }
+      ]
+    },
+    "values": {
+      "eyebrow": "Por qué BMC",
+      "title": "Los valores que guían cada inspección",
+      "description": "La misma exigencia técnica y profesionalismo de los líderes del sector marítimo, con una identidad propia y moderna.",
+      "items": [
+        { "title": "Excelencia Técnica", "description": "Estándares rigurosos en cada inspección y reporte que entregamos." },
+        { "title": "Cobertura Global", "description": "Red de inspectores preparada para responder en los principales puertos del mundo." },
+        { "title": "Rapidez de Respuesta", "description": "Coordinación ágil para minimizar tiempos de espera y demoras operativas." },
+        { "title": "Confianza y Transparencia", "description": "Reportes claros y objetivos que respaldan decisiones comerciales seguras." }
+      ]
+    },
+    "industries": {
+      "eyebrow": "Industrias",
+      "title": "Trabajamos junto a los actores clave de la industria marítima",
+      "description": "Nuestros servicios están diseñados para responder a las necesidades específicas de cada segmento de la cadena marítima.",
+      "viewAll": "Ver todas las industrias",
+      "items": [
+        { "title": "Shipowners & Operators" },
+        { "title": "Charterers" },
+        { "title": "P&I Clubs & Insurers" },
+        { "title": "Shipyards" }
+      ]
+    },
+    "coverage": {
+      "eyebrow": "Cobertura Global",
+      "title": "Una red de inspectores lista para responder donde estés",
+      "description": "Coordinamos inspecciones y auditorías en los principales puertos del mundo, con tiempos de respuesta pensados para no interrumpir tu operación.",
+      "cta": "Ver cobertura mundial"
+    },
+    "finalCta": {
+      "title": "¿Necesitás una inspección o auditoría técnica?",
+      "description": "Contanos qué necesitás y coordinamos con nuestro equipo la mejor solución para tu operación, donde estés.",
+      "button": "Contactar a BMC"
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "Nosotros",
+      "description": "Conocé a Blueseas Marine Consulting (BMC): nuestra misión, valores y el enfoque técnico que aplicamos en cada inspección y auditoría."
+    },
+    "hero": {
+      "eyebrow": "Nosotros",
+      "title": "Experiencia técnica marítima con estándares internacionales",
+      "description": "Blueseas Marine Consulting (BMC) nace para ofrecer inspecciones, auditorías y consultoría técnica confiable a la industria marítima, con la misma exigencia que caracteriza a los líderes del sector."
+    },
+    "mission": {
+      "eyebrow": "Misión",
+      "title": "Ser el socio técnico confiable de la industria marítima",
+      "description": "Brindar inspecciones, auditorías y consultoría técnica de alta precisión, que permitan a nuestros clientes operar con seguridad, cumplimiento y confianza en cualquier parte del mundo."
+    },
+    "vision": {
+      "eyebrow": "Visión",
+      "title": "Ser referentes en inspección y consultoría marítima a nivel global",
+      "description": "Construir una plataforma de servicios que evolucione junto a la industria, incorporando tecnología y digitalización sin perder el criterio técnico que define a BMC."
+    },
+    "valuesHeading": {
+      "eyebrow": "Nuestros Valores",
+      "title": "Lo que nos define en cada trabajo"
+    },
+    "values": ["Profesionalismo", "Confianza", "Excelencia Técnica", "Rapidez de Respuesta", "Cobertura Global", "Innovación"],
+    "approach": {
+      "eyebrow": "Nuestro Enfoque",
+      "title": "Cómo trabajamos en cada inspección",
+      "description": "Un proceso claro y repetible, diseñado para dar previsibilidad a nuestros clientes de principio a fin.",
+      "items": [
+        { "step": "01", "title": "Entendemos tu operación", "description": "Relevamos el contexto, el tipo de buque o activo y el objetivo de la inspección o auditoría antes de coordinar el trabajo." },
+        { "step": "02", "title": "Coordinamos en el lugar correcto", "description": "Asignamos inspectores calificados en el puerto o ubicación requerida, minimizando demoras operativas." },
+        { "step": "03", "title": "Ejecutamos con rigor técnico", "description": "Aplicamos estándares internacionales de la industria en cada inspección, auditoría o survey." },
+        { "step": "04", "title": "Entregamos reportes claros", "description": "Documentación precisa y accionable, pensada para respaldar decisiones comerciales y operativas." }
+      ]
+    },
+    "cta": {
+      "title": "¿Querés conocer más sobre cómo trabajamos?",
+      "button": "Hablar con BMC"
+    }
+  },
+  "services": {
+    "metadata": {
+      "title": "Servicios",
+      "description": "Inspecciones marinas, auditorías técnicas, condition surveys, vetting y consultoría técnica para la industria marítima con cobertura global."
+    },
+    "hero": {
+      "eyebrow": "Servicios",
+      "title": "Servicios técnicos para operar con seguridad y cumplimiento",
+      "description": "Cubrimos todo el ciclo de necesidades técnicas de la operación marítima, desde inspecciones puntuales hasta programas de auditoría continuos."
+    },
+    "list": [
+      {
+        "title": "Marine Inspections",
+        "description": "Inspecciones a bordo de buques, cargas y equipos, cubriendo desde inspecciones de rutina hasta requerimientos específicos de clientes y aseguradoras.",
+        "points": ["Inspecciones de entrega y redelivery", "Inspecciones de carga y estiba", "Inspecciones de equipos y maquinaria"]
+      },
+      {
+        "title": "Technical Audits",
+        "description": "Auditorías técnicas y de gestión que evalúan el cumplimiento operativo, documental y regulatorio de la operación.",
+        "points": ["Auditorías de gestión de la seguridad", "Auditorías de cumplimiento normativo", "Revisión de procedimientos operativos"]
+      },
+      {
+        "title": "Condition & Pre-Purchase Surveys",
+        "description": "Relevamiento del estado real de una embarcación para decisiones de compra, venta, financiamiento o aseguramiento.",
+        "points": ["Surveys de condición general", "Inspecciones pre-compra", "Evaluación de casco, máquinas y equipos"]
+      },
+      {
+        "title": "Vetting Support",
+        "description": "Acompañamiento técnico en procesos de vetting para operadores, charterers y terminales, alineado a estándares del sector.",
+        "points": ["Preparación previa a inspecciones de vetting", "Revisión documental", "Seguimiento de observaciones y cierre de hallazgos"]
+      },
+      {
+        "title": "Technical Consultancy",
+        "description": "Asesoramiento especializado para armadores, operadores, aseguradoras y clubes P&I en asuntos técnicos y operativos.",
+        "points": ["Asesoría técnica especializada", "Soporte en reclamos y disputas técnicas", "Evaluación de riesgo operativo"]
+      },
+      {
+        "title": "Respuesta a Incidentes",
+        "description": "Coordinación de inspección técnica rápida ante incidentes, averías o eventos que requieren evaluación inmediata.",
+        "points": ["Evaluación de daños", "Coordinación con puertos y autoridades", "Informes preliminares y finales"]
+      }
+    ],
+    "process": {
+      "eyebrow": "Cómo Trabajamos",
+      "title": "Un proceso simple, de punta a punta",
+      "description": "Coordinamos cada solicitud con previsibilidad, desde el primer contacto hasta el informe final.",
+      "items": [
+        { "title": "Solicitud", "description": "Nos contás qué necesitás y dónde." },
+        { "title": "Asignación", "description": "Coordinamos el inspector adecuado para el lugar y el trabajo." },
+        { "title": "Ejecución", "description": "Realizamos la inspección o auditoría con estándares técnicos rigurosos." },
+        { "title": "Reporte", "description": "Entregamos un informe claro con hallazgos y recomendaciones." }
+      ]
+    },
+    "cta": {
+      "title": "Contanos qué servicio necesitás y coordinamos la inspección",
+      "button": "Solicitar Inspección"
+    }
+  },
+  "industries": {
+    "metadata": {
+      "title": "Industrias",
+      "description": "BMC brinda inspección y consultoría técnica a armadores, operadores, charterers, aseguradoras, clubes P&I, astilleros y otros actores de la industria marítima."
+    },
+    "hero": {
+      "eyebrow": "Industrias",
+      "title": "Un servicio técnico pensado para cada actor de la cadena marítima",
+      "description": "Trabajamos con distintos segmentos de la industria, adaptando cada servicio a sus necesidades comerciales y operativas específicas."
+    },
+    "section": {
+      "eyebrow": "A quién servimos",
+      "title": "Segmentos de la industria que acompañamos"
+    },
+    "items": [
+      { "title": "Shipowners & Operators", "description": "Inspecciones y auditorías que acompañan la operación diaria de la flota, reduciendo riesgos y tiempos de parada." },
+      { "title": "Charterers", "description": "Inspecciones de entrega, redelivery y condición que respaldan decisiones comerciales de fletamento." },
+      { "title": "P&I Clubs & Insurers", "description": "Surveys técnicos independientes que sustentan evaluaciones de riesgo, siniestros y reclamos." },
+      { "title": "Shipyards", "description": "Auditorías técnicas y de calidad durante procesos de reparación, mantenimiento y construcción." },
+      { "title": "Cargo Interests", "description": "Inspección de carga y estiba para proteger la integridad de mercancías durante el transporte marítimo." },
+      { "title": "Offshore & Energy", "description": "Consultoría técnica y de inspección para operaciones offshore y proyectos energéticos marítimos." },
+      { "title": "Financial & Legal Advisors", "description": "Informes técnicos objetivos que respaldan procesos de financiamiento, due diligence y disputas legales." }
+    ],
+    "cta": {
+      "title": "¿No ves tu industria en la lista? Igual podemos ayudarte",
+      "button": "Hablar con BMC"
+    }
+  },
+  "coverage": {
+    "metadata": {
+      "title": "Cobertura Global",
+      "description": "Red de inspectores de Blueseas Marine Consulting (BMC) con cobertura en los principales puertos del mundo y capacidad de respuesta rápida."
+    },
+    "hero": {
+      "eyebrow": "Cobertura Global",
+      "title": "Presencia mundial, respuesta local",
+      "description": "Coordinamos inspecciones y auditorías técnicas en los principales puertos del mundo, con inspectores preparados para responder donde la operación lo requiera."
+    },
+    "regions": {
+      "eyebrow": "Nuestra Red",
+      "title": "Cobertura por región",
+      "description": "Trabajamos con una red de inspectores distribuida estratégicamente para responder con rapidez en cualquier parte del mundo.",
+      "items": [
+        { "title": "Américas", "description": "Cobertura en puertos de América del Norte, Central y del Sur." },
+        { "title": "Europa", "description": "Red de inspectores en los principales puertos europeos y del Mediterráneo." },
+        { "title": "África", "description": "Presencia en puntos clave de la costa africana." },
+        { "title": "Medio Oriente", "description": "Cobertura en rutas y puertos estratégicos de la región." },
+        { "title": "Asia-Pacífico", "description": "Red de inspectores en los principales hubs marítimos de Asia y Oceanía." }
+      ]
+    },
+    "highlights": {
+      "eyebrow": "Por qué importa",
+      "title": "Cobertura global con criterio técnico consistente",
+      "description": "No se trata solo de estar presentes en más lugares, sino de mantener el mismo nivel de exigencia en cada inspección, sin importar dónde se realice.",
+      "items": [
+        { "title": "Red Global de Inspectores", "description": "Profesionales calificados disponibles en los principales puertos del mundo." },
+        { "title": "Coordinación Ágil", "description": "Asignación rápida de inspectores para minimizar demoras operativas." },
+        { "title": "Criterio Técnico Uniforme", "description": "Mismos estándares de calidad y reporte, sin importar la ubicación." },
+        { "title": "Equipo Local, Estándar Global", "description": "Conocimiento del contexto local combinado con procesos técnicos consistentes." }
+      ]
+    },
+    "cta": {
+      "title": "¿Necesitás un inspector en un puerto específico?",
+      "button": "Consultar Disponibilidad"
+    }
+  },
+  "contact": {
+    "metadata": {
+      "title": "Contacto",
+      "description": "Contactá a Blueseas Marine Consulting (BMC) para solicitar una inspección, auditoría técnica o consultoría marítima en cualquier parte del mundo."
+    },
+    "hero": {
+      "eyebrow": "Contacto",
+      "title": "Hablemos de tu próxima inspección",
+      "description": "Contanos qué necesitás y nuestro equipo te va a responder a la brevedad para coordinar los próximos pasos."
+    },
+    "infoHeading": "Información de contacto",
+    "info": [
+      { "label": "Email", "value": "contact@blueseasmc.com" },
+      { "label": "Teléfono", "value": "+1 (000) 000-0000" },
+      { "label": "Oficina Central", "value": "Dirección pendiente" },
+      { "label": "Horario", "value": "Lunes a Viernes, 9:00 - 18:00" }
+    ],
+    "form": {
+      "nameLabel": "Nombre completo",
+      "namePlaceholder": "Tu nombre",
+      "companyLabel": "Empresa",
+      "companyPlaceholder": "Nombre de tu empresa",
+      "emailLabel": "Email",
+      "emailPlaceholder": "tu@empresa.com",
+      "phoneLabel": "Teléfono",
+      "phonePlaceholder": "+00 000 000 000",
+      "serviceLabel": "Servicio de interés",
+      "serviceOptions": [
+        "Marine Inspection",
+        "Technical Audit",
+        "Condition / Pre-Purchase Survey",
+        "Vetting Support",
+        "Technical Consultancy",
+        "Otro"
+      ],
+      "messageLabel": "Mensaje",
+      "messagePlaceholder": "Contanos qué necesitás: tipo de inspección, ubicación, fechas, etc.",
+      "submitButton": "Enviar Solicitud",
+      "successTitle": "¡Gracias por contactarnos!",
+      "successDescription": "Recibimos tu solicitud. Nuestro equipo se va a comunicar con vos a la brevedad para coordinar los próximos pasos."
+    }
+  }
+}
