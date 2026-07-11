@@ -10,11 +10,17 @@
   --brand-navy-800: #0f2a4a;
   --brand-navy-700: #163a63;
   --brand-navy-600: #1f4d80;
+  --brand-teal-700: #0f766e;
+  --brand-teal-600: #0d9488;
   --brand-teal-500: #14b8a6;
   --brand-teal-400: #2dd4bf;
   --brand-teal-300: #5eead4;
+  --brand-teal-50: #f0fdfa;
+  --brand-slate-700: #334155;
   --brand-slate-600: #475569;
   --brand-slate-500: #64748b;
+  --brand-slate-400: #94a3b8;
+  --brand-slate-300: #cbd5e1;
   --brand-slate-200: #e2e8f0;
   --brand-slate-100: #f1f5f9;
 }
@@ -30,11 +36,17 @@
   --color-brand-navy-800: var(--brand-navy-800);
   --color-brand-navy-700: var(--brand-navy-700);
   --color-brand-navy-600: var(--brand-navy-600);
+  --color-brand-teal-700: var(--brand-teal-700);
+  --color-brand-teal-600: var(--brand-teal-600);
   --color-brand-teal-500: var(--brand-teal-500);
   --color-brand-teal-400: var(--brand-teal-400);
   --color-brand-teal-300: var(--brand-teal-300);
+  --color-brand-teal-50: var(--brand-teal-50);
+  --color-brand-slate-700: var(--brand-slate-700);
   --color-brand-slate-600: var(--brand-slate-600);
   --color-brand-slate-500: var(--brand-slate-500);
+  --color-brand-slate-400: var(--brand-slate-400);
+  --color-brand-slate-300: var(--brand-slate-300);
   --color-brand-slate-200: var(--brand-slate-200);
   --color-brand-slate-100: var(--brand-slate-100);
 }

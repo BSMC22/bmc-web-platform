@@ -39,7 +39,8 @@
     "phone": "+1 (000) 000-0000",
     "officeShort": "Oficina central — dirección pendiente",
     "copyright": "Todos los derechos reservados.",
-    "tagline": "Worldwide Marine Inspection, Audits and Technical Consultancy."
+    "tagline": "Worldwide Marine Inspection, Audits and Technical Consultancy.",
+    "portalLink": "Portal de Inspectores"
   },
   "home": {
     "hero": {
@@ -302,6 +303,337 @@
       "submitButton": "Enviar Solicitud",
       "successTitle": "¡Gracias por contactarnos!",
       "successDescription": "Recibimos tu solicitud. Nuestro equipo se va a comunicar con vos a la brevedad para coordinar los próximos pasos."
+    }
+  },
+  "portal": {
+    "login": {
+      "metadata": {
+        "title": "Portal de Inspectores — Iniciar sesión",
+        "description": "Iniciá sesión en el Portal de Inspectores de BMC para ver tus asignaciones, subir reportes y gestionar tu cuenta."
+      },
+      "badge": "Portal de Inspectores",
+      "title": "Iniciá sesión en tu cuenta",
+      "subtitle": "Consultá tus inspecciones asignadas, subí reportes y gestioná facturas, gastos y disponibilidad.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "tu@empresa.com",
+      "passwordLabel": "Contraseña",
+      "passwordPlaceholder": "••••••••",
+      "submitButton": "Iniciar sesión",
+      "submitButtonLoading": "Iniciando sesión…",
+      "errorInvalidCredentials": "Email o contraseña incorrectos.",
+      "errorGeneric": "Algo salió mal. Intentá de nuevo.",
+      "backToSite": "Volver al sitio"
+    },
+    "nav": {
+      "dashboard": "Panel",
+      "inspections": "Mis Inspecciones",
+      "invoices": "Facturas",
+      "expenses": "Gastos",
+      "availability": "Disponibilidad",
+      "logout": "Cerrar sesión"
+    },
+    "dashboard": {
+      "metadata": {
+        "title": "Panel",
+        "description": "Resumen de tus inspecciones asignadas."
+      },
+      "welcomeTitle": "Bienvenido de nuevo",
+      "welcomeDescription": "Este es un resumen de tu cuenta."
+    },
+    "inspections": {
+      "metadata": {
+        "title": "Mis Inspecciones",
+        "description": "Consultá las inspecciones que tenés asignadas."
+      },
+      "title": "Mis Inspecciones",
+      "subtitle": "Inspecciones actualmente asignadas a vos.",
+      "empty": "Todavía no tenés inspecciones asignadas.",
+      "table": {
+        "client": "Cliente",
+        "date": "Fecha programada"
+      },
+      "status": {
+        "scheduled": "Programada",
+        "in_progress": "En curso",
+        "completed": "Completada",
+        "cancelled": "Cancelada"
+      },
+      "viewDetails": "Ver detalles",
+      "detail": {
+        "back": "Volver a Mis Inspecciones",
+        "clientLabel": "Cliente",
+        "vesselLabel": "Embarcación",
+        "portLabel": "Puerto",
+        "locationLabel": "Ubicación",
+        "serviceTypeLabel": "Tipo de servicio",
+        "notesLabel": "Notas",
+        "statusHeading": "Estado",
+        "statusSaveButton": "Actualizar estado",
+        "statusSavingButton": "Actualizando…",
+        "statusError": "No se pudo actualizar el estado. Intentá de nuevo.",
+        "reportsHeading": "Reportes y archivos",
+        "reportsDescription": "Subí reportes de inspección, fotos u otros archivos de respaldo.",
+        "uploadFileLabel": "Archivo",
+        "uploadDescriptionLabel": "Descripción (opcional)",
+        "uploadDescriptionPlaceholder": "ej. Reporte final de inspección",
+        "uploadButton": "Subir",
+        "uploadingButton": "Subiendo…",
+        "uploadError": "Ocurrió un error al subir el archivo. Intentá de nuevo.",
+        "noReports": "Todavía no se subieron archivos.",
+        "downloadLink": "Descargar",
+        "uploadedOn": "Subido el"
+      }
+    },
+    "invoices": {
+      "metadata": {
+        "title": "Facturas",
+        "description": "Enviá y seguí el estado de tus facturas."
+      },
+      "title": "Facturas",
+      "subtitle": "Enviá facturas por tus inspecciones y seguí su estado.",
+      "form": {
+        "heading": "Enviar nueva factura",
+        "inspectionLabel": "Inspección",
+        "inspectionPlaceholder": "Seleccioná una inspección",
+        "amountLabel": "Monto",
+        "currencyLabel": "Moneda",
+        "fileLabel": "Archivo de factura",
+        "notesLabel": "Notas (opcional)",
+        "notesPlaceholder": "ej. Factura #1234",
+        "submitButton": "Enviar factura",
+        "submittingButton": "Enviando…",
+        "error": "Ocurrió un error al enviar la factura. Intentá de nuevo."
+      },
+      "listHeading": "Facturas enviadas",
+      "empty": "Todavía no enviaste ninguna factura.",
+      "status": {
+        "submitted": "Enviada",
+        "approved": "Aprobada",
+        "rejected": "Rechazada",
+        "paid": "Pagada"
+      },
+      "paymentsHeading": "Estado de pagos",
+      "paymentsDescription": "Estado de pago por inspección, según lo registrado por BMC.",
+      "paymentsEmpty": "Todavía no hay registros de pago.",
+      "paymentStatus": {
+        "pending": "Pendiente",
+        "processing": "En proceso",
+        "paid": "Pagado"
+      },
+      "viewFile": "Ver archivo"
+    },
+    "expenses": {
+      "metadata": {
+        "title": "Gastos",
+        "description": "Enviá y seguí el estado de tus gastos."
+      },
+      "title": "Gastos",
+      "subtitle": "Registrá gastos reembolsables de tus inspecciones.",
+      "form": {
+        "heading": "Enviar nuevo gasto",
+        "inspectionLabel": "Inspección",
+        "inspectionPlaceholder": "Seleccioná una inspección",
+        "descriptionLabel": "Descripción",
+        "descriptionPlaceholder": "ej. Taxi al puerto",
+        "amountLabel": "Monto",
+        "currencyLabel": "Moneda",
+        "dateLabel": "Fecha del gasto",
+        "receiptLabel": "Comprobante (opcional)",
+        "submitButton": "Enviar gasto",
+        "submittingButton": "Enviando…",
+        "error": "Ocurrió un error al enviar el gasto. Intentá de nuevo."
+      },
+      "listHeading": "Gastos enviados",
+      "empty": "Todavía no enviaste ningún gasto.",
+      "status": {
+        "submitted": "Enviado",
+        "approved": "Aprobado",
+        "rejected": "Rechazado",
+        "reimbursed": "Reembolsado"
+      },
+      "viewReceipt": "Ver comprobante"
+    },
+    "availability": {
+      "metadata": {
+        "title": "Disponibilidad",
+        "description": "Contale a BMC cuándo estás disponible para inspecciones."
+      },
+      "title": "Disponibilidad",
+      "subtitle": "Contale a BMC cuándo estás disponible o no disponible para inspecciones.",
+      "form": {
+        "heading": "Agregar disponibilidad",
+        "startDateLabel": "Fecha de inicio",
+        "endDateLabel": "Fecha de fin",
+        "statusLabel": "Estado",
+        "notesLabel": "Notas (opcional)",
+        "notesPlaceholder": "ej. Viaje, licencia, etc.",
+        "submitButton": "Agregar",
+        "submittingButton": "Agregando…",
+        "error": "Ocurrió un error. Intentá de nuevo."
+      },
+      "listHeading": "Tu disponibilidad",
+      "empty": "Todavía no agregaste ninguna disponibilidad.",
+      "status": {
+        "available": "Disponible",
+        "unavailable": "No disponible"
+      },
+      "deleteButton": "Quitar",
+      "deleteConfirm": "¿Quitar esta disponibilidad?"
+    },
+    "admin": {
+      "brandName": "Operaciones",
+      "nav": {
+        "dashboard": "Panel",
+        "inspections": "Inspecciones",
+        "users": "Usuarios",
+        "invoices": "Facturas",
+        "expenses": "Gastos"
+      },
+      "dashboard": {
+        "metadata": {
+          "title": "Panel de Operaciones",
+          "description": "Resumen de inspecciones, usuarios y aprobaciones pendientes."
+        },
+        "welcomeTitle": "Resumen de Operaciones",
+        "welcomeDescription": "Un vistazo rápido a lo que necesita atención.",
+        "stats": {
+          "inspections": "Inspecciones",
+          "users": "Usuarios",
+          "pendingInvoices": "Facturas pendientes",
+          "pendingExpenses": "Gastos pendientes"
+        }
+      },
+      "inspections": {
+        "metadata": {
+          "title": "Inspecciones",
+          "description": "Creá inspecciones y asigná inspectores."
+        },
+        "title": "Inspecciones",
+        "subtitle": "Creá inspecciones y asignales inspectores.",
+        "createHeading": "Nueva inspección",
+        "form": {
+          "titleLabel": "Título",
+          "titlePlaceholder": "ej. Inspección de carga pre-embarque",
+          "clientLabel": "Cliente",
+          "clientPlaceholder": "Nombre del cliente",
+          "vesselLabel": "Embarcación (opcional)",
+          "portLabel": "Puerto (opcional)",
+          "serviceTypeLabel": "Tipo de servicio (opcional)",
+          "statusLabel": "Estado",
+          "dateLabel": "Fecha programada (opcional)",
+          "notesLabel": "Notas (opcional)",
+          "submitButton": "Crear inspección",
+          "submittingButton": "Creando…",
+          "error": "Ocurrió un error al crear la inspección. Intentá de nuevo."
+        },
+        "listHeading": "Todas las inspecciones",
+        "empty": "Todavía no hay inspecciones. Creá la primera arriba.",
+        "table": {
+          "client": "Cliente",
+          "date": "Fecha programada",
+          "assigned": "Inspectores asignados"
+        },
+        "status": {
+          "scheduled": "Programada",
+          "in_progress": "En curso",
+          "completed": "Completada",
+          "cancelled": "Cancelada"
+        },
+        "assignLabel": "Asignar inspector",
+        "assignPlaceholder": "Seleccioná un inspector",
+        "assignButton": "Asignar",
+        "assigningButton": "Asignando…",
+        "assignError": "No se pudo asignar el inspector. Intentá de nuevo.",
+        "unassignButton": "Quitar",
+        "noInspectors": "Todavía no hay inspectores disponibles.",
+        "assignedEmpty": "Todavía no hay inspectores asignados."
+      },
+      "users": {
+        "metadata": {
+          "title": "Usuarios",
+          "description": "Gestioná inspectores y administradores."
+        },
+        "title": "Usuarios",
+        "subtitle": "Consultá las cuentas y gestioná los roles.",
+        "listHeading": "Todos los usuarios",
+        "empty": "Todavía no hay usuarios.",
+        "table": {
+          "name": "Nombre",
+          "email": "Email",
+          "role": "Rol",
+          "joined": "Alta"
+        },
+        "role": {
+          "admin": "Admin",
+          "inspector": "Inspector"
+        },
+        "roleSaveButton": "Guardar",
+        "roleSavingButton": "Guardando…",
+        "roleError": "No se pudo actualizar el rol. Intentá de nuevo.",
+        "inviteHeading": "Invitar usuario",
+        "form": {
+          "emailLabel": "Email",
+          "emailPlaceholder": "persona@empresa.com",
+          "fullNameLabel": "Nombre completo (opcional)",
+          "roleLabel": "Rol",
+          "submitButton": "Enviar invitación",
+          "submittingButton": "Enviando…",
+          "success": "Invitación enviada.",
+          "error": "Ocurrió un error al enviar la invitación. Intentá de nuevo."
+        }
+      },
+      "invoices": {
+        "metadata": {
+          "title": "Facturas",
+          "description": "Revisá y actualizá el estado de las facturas."
+        },
+        "title": "Facturas",
+        "subtitle": "Revisá las facturas enviadas por los inspectores.",
+        "listHeading": "Todas las facturas",
+        "empty": "Todavía no se enviaron facturas.",
+        "table": {
+          "inspector": "Inspector",
+          "inspection": "Inspección",
+          "amount": "Monto",
+          "submitted": "Enviada"
+        },
+        "status": {
+          "submitted": "Enviada",
+          "approved": "Aprobada",
+          "rejected": "Rechazada",
+          "paid": "Pagada"
+        },
+        "statusSaveButton": "Actualizar",
+        "statusSavingButton": "Actualizando…",
+        "statusError": "No se pudo actualizar el estado. Intentá de nuevo.",
+        "viewFile": "Ver archivo"
+      },
+      "expenses": {
+        "metadata": {
+          "title": "Gastos",
+          "description": "Revisá y actualizá el estado de los gastos."
+        },
+        "title": "Gastos",
+        "subtitle": "Revisá los gastos enviados por los inspectores.",
+        "listHeading": "Todos los gastos",
+        "empty": "Todavía no se enviaron gastos.",
+        "table": {
+          "inspector": "Inspector",
+          "inspection": "Inspección",
+          "amount": "Monto",
+          "submitted": "Enviado"
+        },
+        "status": {
+          "submitted": "Enviado",
+          "approved": "Aprobado",
+          "rejected": "Rechazado",
+          "reimbursed": "Reembolsado"
+        },
+        "statusSaveButton": "Actualizar",
+        "statusSavingButton": "Actualizando…",
+        "statusError": "No se pudo actualizar el estado. Intentá de nuevo.",
+        "viewReceipt": "Ver comprobante"
+      }
     }
   }
 }

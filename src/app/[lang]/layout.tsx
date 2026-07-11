@@ -1,20 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
+import SiteChrome from "@/components/layout/site-chrome";
 import { locales, isLocale, defaultLocale, type Locale } from "@/lib/i18n-config";
 import { getDictionary } from "@/lib/dictionaries";
+import { geistSans, geistMono } from "@/lib/fonts";
 import "../globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -56,9 +47,13 @@ export default async function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
-        <Header lang={locale} dict={dict} />
+        <SiteChrome>
+          <Header lang={locale} dict={dict} />
+        </SiteChrome>
         <main className="flex-1">{children}</main>
-        <Footer lang={locale} dict={dict} />
+        <SiteChrome>
+          <Footer lang={locale} dict={dict} />
+        </SiteChrome>
       </body>
     </html>
   );

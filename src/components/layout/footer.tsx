@@ -86,7 +86,16 @@ export default function Footer({ lang, dict }: { lang: Locale; dict: Dictionary 
 
         <div className="flex flex-col gap-2 border-t border-white/10 py-6 text-xs text-brand-slate-200/60 sm:flex-row sm:items-center sm:justify-between">
           <p>&copy; {new Date().getFullYear()} {dict.common.brandName}. {dict.footer.copyright}</p>
-          <p>{dict.footer.tagline}</p>
+          <div className="flex items-center gap-4">
+            <p>{dict.footer.tagline}</p>
+            <Link
+              href={localizedPath(lang, "/portal/login")}
+              prefetch={false}
+              className="text-brand-slate-200/60 underline-offset-2 hover:text-brand-teal-300 hover:underline"
+            >
+              {dict.footer.portalLink}
+            </Link>
+          </div>
         </div>
       </Container>
     </footer>

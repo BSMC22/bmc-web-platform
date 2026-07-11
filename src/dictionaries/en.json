@@ -39,7 +39,8 @@
     "phone": "+1 (000) 000-0000",
     "officeShort": "Head office — address pending",
     "copyright": "All rights reserved.",
-    "tagline": "Worldwide Marine Inspection, Audits and Technical Consultancy."
+    "tagline": "Worldwide Marine Inspection, Audits and Technical Consultancy.",
+    "portalLink": "Inspector Portal"
   },
   "home": {
     "hero": {
@@ -302,6 +303,337 @@
       "submitButton": "Send Request",
       "successTitle": "Thanks for reaching out!",
       "successDescription": "We received your request. Our team will get in touch with you shortly to coordinate the next steps."
+    }
+  },
+  "portal": {
+    "login": {
+      "metadata": {
+        "title": "Inspector Portal — Sign In",
+        "description": "Sign in to the BMC Inspector Portal to view assignments, upload reports and manage your account."
+      },
+      "badge": "Inspector Portal",
+      "title": "Sign in to your account",
+      "subtitle": "View your assigned inspections, upload reports and manage invoices, expenses and availability.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@company.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "••••••••",
+      "submitButton": "Sign In",
+      "submitButtonLoading": "Signing in…",
+      "errorInvalidCredentials": "Invalid email or password.",
+      "errorGeneric": "Something went wrong. Please try again.",
+      "backToSite": "Back to website"
+    },
+    "nav": {
+      "dashboard": "Dashboard",
+      "inspections": "My Inspections",
+      "invoices": "Invoices",
+      "expenses": "Expenses",
+      "availability": "Availability",
+      "logout": "Sign Out"
+    },
+    "dashboard": {
+      "metadata": {
+        "title": "Dashboard",
+        "description": "Overview of your assigned inspections."
+      },
+      "welcomeTitle": "Welcome back",
+      "welcomeDescription": "Here's an overview of your account."
+    },
+    "inspections": {
+      "metadata": {
+        "title": "My Inspections",
+        "description": "View the inspections assigned to you."
+      },
+      "title": "My Inspections",
+      "subtitle": "Inspections currently assigned to you.",
+      "empty": "You have no assigned inspections yet.",
+      "table": {
+        "client": "Client",
+        "date": "Scheduled date"
+      },
+      "status": {
+        "scheduled": "Scheduled",
+        "in_progress": "In Progress",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      },
+      "viewDetails": "View details",
+      "detail": {
+        "back": "Back to My Inspections",
+        "clientLabel": "Client",
+        "vesselLabel": "Vessel",
+        "portLabel": "Port",
+        "locationLabel": "Location",
+        "serviceTypeLabel": "Service type",
+        "notesLabel": "Notes",
+        "statusHeading": "Status",
+        "statusSaveButton": "Update status",
+        "statusSavingButton": "Updating…",
+        "statusError": "Couldn't update the status. Please try again.",
+        "reportsHeading": "Reports & Files",
+        "reportsDescription": "Upload inspection reports, photos or supporting files.",
+        "uploadFileLabel": "File",
+        "uploadDescriptionLabel": "Description (optional)",
+        "uploadDescriptionPlaceholder": "e.g. Final inspection report",
+        "uploadButton": "Upload",
+        "uploadingButton": "Uploading…",
+        "uploadError": "Something went wrong uploading the file. Please try again.",
+        "noReports": "No files uploaded yet.",
+        "downloadLink": "Download",
+        "uploadedOn": "Uploaded on"
+      }
+    },
+    "invoices": {
+      "metadata": {
+        "title": "Invoices",
+        "description": "Submit and track your invoices."
+      },
+      "title": "Invoices",
+      "subtitle": "Submit invoices for your inspections and track their status.",
+      "form": {
+        "heading": "Submit new invoice",
+        "inspectionLabel": "Inspection",
+        "inspectionPlaceholder": "Select an inspection",
+        "amountLabel": "Amount",
+        "currencyLabel": "Currency",
+        "fileLabel": "Invoice file",
+        "notesLabel": "Notes (optional)",
+        "notesPlaceholder": "e.g. Invoice #1234",
+        "submitButton": "Submit invoice",
+        "submittingButton": "Submitting…",
+        "error": "Something went wrong submitting the invoice. Please try again."
+      },
+      "listHeading": "Submitted invoices",
+      "empty": "You haven't submitted any invoices yet.",
+      "status": {
+        "submitted": "Submitted",
+        "approved": "Approved",
+        "rejected": "Rejected",
+        "paid": "Paid"
+      },
+      "paymentsHeading": "Payment status",
+      "paymentsDescription": "Payment status per inspection, as tracked by BMC.",
+      "paymentsEmpty": "No payment records yet.",
+      "paymentStatus": {
+        "pending": "Pending",
+        "processing": "Processing",
+        "paid": "Paid"
+      },
+      "viewFile": "View file"
+    },
+    "expenses": {
+      "metadata": {
+        "title": "Expenses",
+        "description": "Submit and track your expenses."
+      },
+      "title": "Expenses",
+      "subtitle": "Log reimbursable expenses for your inspections.",
+      "form": {
+        "heading": "Submit new expense",
+        "inspectionLabel": "Inspection",
+        "inspectionPlaceholder": "Select an inspection",
+        "descriptionLabel": "Description",
+        "descriptionPlaceholder": "e.g. Taxi to port",
+        "amountLabel": "Amount",
+        "currencyLabel": "Currency",
+        "dateLabel": "Date incurred",
+        "receiptLabel": "Receipt (optional)",
+        "submitButton": "Submit expense",
+        "submittingButton": "Submitting…",
+        "error": "Something went wrong submitting the expense. Please try again."
+      },
+      "listHeading": "Submitted expenses",
+      "empty": "You haven't submitted any expenses yet.",
+      "status": {
+        "submitted": "Submitted",
+        "approved": "Approved",
+        "rejected": "Rejected",
+        "reimbursed": "Reimbursed"
+      },
+      "viewReceipt": "View receipt"
+    },
+    "availability": {
+      "metadata": {
+        "title": "Availability",
+        "description": "Let BMC know when you're available for inspections."
+      },
+      "title": "Availability",
+      "subtitle": "Let BMC know when you're available or unavailable for inspections.",
+      "form": {
+        "heading": "Add availability",
+        "startDateLabel": "Start date",
+        "endDateLabel": "End date",
+        "statusLabel": "Status",
+        "notesLabel": "Notes (optional)",
+        "notesPlaceholder": "e.g. Traveling, on leave, etc.",
+        "submitButton": "Add",
+        "submittingButton": "Adding…",
+        "error": "Something went wrong. Please try again."
+      },
+      "listHeading": "Your availability",
+      "empty": "You haven't added any availability windows yet.",
+      "status": {
+        "available": "Available",
+        "unavailable": "Unavailable"
+      },
+      "deleteButton": "Remove",
+      "deleteConfirm": "Remove this availability window?"
+    },
+    "admin": {
+      "brandName": "Operations",
+      "nav": {
+        "dashboard": "Dashboard",
+        "inspections": "Inspections",
+        "users": "Users",
+        "invoices": "Invoices",
+        "expenses": "Expenses"
+      },
+      "dashboard": {
+        "metadata": {
+          "title": "Operations Dashboard",
+          "description": "Overview of inspections, users and pending approvals."
+        },
+        "welcomeTitle": "Operations overview",
+        "welcomeDescription": "A quick look at what needs attention.",
+        "stats": {
+          "inspections": "Inspections",
+          "users": "Users",
+          "pendingInvoices": "Pending invoices",
+          "pendingExpenses": "Pending expenses"
+        }
+      },
+      "inspections": {
+        "metadata": {
+          "title": "Inspections",
+          "description": "Create inspections and assign inspectors."
+        },
+        "title": "Inspections",
+        "subtitle": "Create inspections and assign inspectors to them.",
+        "createHeading": "New inspection",
+        "form": {
+          "titleLabel": "Title",
+          "titlePlaceholder": "e.g. Pre-shipment cargo inspection",
+          "clientLabel": "Client",
+          "clientPlaceholder": "Client name",
+          "vesselLabel": "Vessel (optional)",
+          "portLabel": "Port (optional)",
+          "serviceTypeLabel": "Service type (optional)",
+          "statusLabel": "Status",
+          "dateLabel": "Scheduled date (optional)",
+          "notesLabel": "Notes (optional)",
+          "submitButton": "Create inspection",
+          "submittingButton": "Creating…",
+          "error": "Something went wrong creating the inspection. Please try again."
+        },
+        "listHeading": "All inspections",
+        "empty": "No inspections yet. Create the first one above.",
+        "table": {
+          "client": "Client",
+          "date": "Scheduled date",
+          "assigned": "Assigned inspectors"
+        },
+        "status": {
+          "scheduled": "Scheduled",
+          "in_progress": "In Progress",
+          "completed": "Completed",
+          "cancelled": "Cancelled"
+        },
+        "assignLabel": "Assign inspector",
+        "assignPlaceholder": "Select an inspector",
+        "assignButton": "Assign",
+        "assigningButton": "Assigning…",
+        "assignError": "Couldn't assign the inspector. Please try again.",
+        "unassignButton": "Remove",
+        "noInspectors": "No inspectors available yet.",
+        "assignedEmpty": "No inspectors assigned yet."
+      },
+      "users": {
+        "metadata": {
+          "title": "Users",
+          "description": "Manage inspectors and administrators."
+        },
+        "title": "Users",
+        "subtitle": "View accounts and manage roles.",
+        "listHeading": "All users",
+        "empty": "No users yet.",
+        "table": {
+          "name": "Name",
+          "email": "Email",
+          "role": "Role",
+          "joined": "Joined"
+        },
+        "role": {
+          "admin": "Admin",
+          "inspector": "Inspector"
+        },
+        "roleSaveButton": "Save",
+        "roleSavingButton": "Saving…",
+        "roleError": "Couldn't update the role. Please try again.",
+        "inviteHeading": "Invite user",
+        "form": {
+          "emailLabel": "Email",
+          "emailPlaceholder": "person@company.com",
+          "fullNameLabel": "Full name (optional)",
+          "roleLabel": "Role",
+          "submitButton": "Send invite",
+          "submittingButton": "Sending…",
+          "success": "Invite sent.",
+          "error": "Something went wrong sending the invite. Please try again."
+        }
+      },
+      "invoices": {
+        "metadata": {
+          "title": "Invoices",
+          "description": "Review and update invoice status."
+        },
+        "title": "Invoices",
+        "subtitle": "Review invoices submitted by inspectors.",
+        "listHeading": "All invoices",
+        "empty": "No invoices submitted yet.",
+        "table": {
+          "inspector": "Inspector",
+          "inspection": "Inspection",
+          "amount": "Amount",
+          "submitted": "Submitted"
+        },
+        "status": {
+          "submitted": "Submitted",
+          "approved": "Approved",
+          "rejected": "Rejected",
+          "paid": "Paid"
+        },
+        "statusSaveButton": "Update",
+        "statusSavingButton": "Updating…",
+        "statusError": "Couldn't update the status. Please try again.",
+        "viewFile": "View file"
+      },
+      "expenses": {
+        "metadata": {
+          "title": "Expenses",
+          "description": "Review and update expense status."
+        },
+        "title": "Expenses",
+        "subtitle": "Review expenses submitted by inspectors.",
+        "listHeading": "All expenses",
+        "empty": "No expenses submitted yet.",
+        "table": {
+          "inspector": "Inspector",
+          "inspection": "Inspection",
+          "amount": "Amount",
+          "submitted": "Submitted"
+        },
+        "status": {
+          "submitted": "Submitted",
+          "approved": "Approved",
+          "rejected": "Rejected",
+          "reimbursed": "Reimbursed"
+        },
+        "statusSaveButton": "Update",
+        "statusSavingButton": "Updating…",
+        "statusError": "Couldn't update the status. Please try again.",
+        "viewReceipt": "View receipt"
+      }
     }
   }
 }

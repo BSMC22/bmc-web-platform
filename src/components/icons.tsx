@@ -195,3 +195,99 @@ export function XIcon(props: IconProps) {
     </svg>
   );
 }
+
+export function LockIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="5" y="11" width="14" height="9" rx="2" />
+      <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+    </svg>
+  );
+}
+
+export function LogOutIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+      <path d="M16 17l5-5-5-5" />
+      <path d="M21 12H9" />
+    </svg>
+  );
+}
+
+export function LayoutDashboardIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="3" y="3" width="8" height="8" rx="1.5" />
+      <rect x="13" y="3" width="8" height="5" rx="1.5" />
+      <rect x="13" y="10" width="8" height="11" rx="1.5" />
+      <rect x="3" y="13" width="8" height="8" rx="1.5" />
+    </svg>
+  );
+}
+
+export function ReceiptIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M6 2h12v19l-2.5-1.5L13 21l-2.5-1.5L8 21l-2-1.5V2Z" />
+      <path d="M9 7h6M9 11h6M9 15h4" />
+    </svg>
+  );
+}
+
+export function WalletIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="3" y="6" width="18" height="13" rx="2" />
+      <path d="M3 10h18" />
+      <circle cx="16" cy="14.5" r="1.2" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function CalendarIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="3" y="5" width="18" height="16" rx="2" />
+      <path d="M3 10h18M8 3v4M16 3v4" />
+    </svg>
+  );
+}
+
+export function TrendingUpIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M3 17l6-6 4 4 8-8" />
+      <path d="M15 7h6v6" />
+    </svg>
+  );
+}
+
+export function AlertTriangleIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M12 3.5 22 20H2L12 3.5Z" />
+      <path d="M12 10v4" />
+      <circle cx="12" cy="17.2" r="0.4" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function SparklesIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M12 3v4M12 17v4M4.5 12h4M15.5 12h4" />
+      <path d="M12 8.5c0 2-1.5 3.5-3.5 3.5 2 0 3.5 1.5 3.5 3.5 0-2 1.5-3.5 3.5-3.5-2 0-3.5-1.5-3.5-3.5Z" />
+    </svg>
+  );
+}
+
+export function BriefcaseIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="3" y="7" width="18" height="13" rx="2" />
+      <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+      <path d="M3 12h18" />
+    </svg>
+  );
+}
